@@ -10,12 +10,24 @@ Depois que este repositório estiver público em `Sa-Meneses/roteiro-insercoes-w
 npx github:Sa-Meneses/roteiro-insercoes-web --agent codex
 ```
 
+Se a skill já existir localmente, atualize/substitua com:
+
+```bash
+npx github:Sa-Meneses/roteiro-insercoes-web --agent codex --force
+```
+
 Outros alvos:
 
 ```bash
 npx github:Sa-Meneses/roteiro-insercoes-web --agent claude
 npx github:Sa-Meneses/roteiro-insercoes-web --agent gemini
 npx github:Sa-Meneses/roteiro-insercoes-web --agent all
+```
+
+Se o `npx` falhar com erro de cache do npm, use um cache temporário:
+
+```bash
+npm_config_cache=/tmp/npm-cache-roteiro-insercoes npx -y github:Sa-Meneses/roteiro-insercoes-web --agent codex --force
 ```
 
 Instalação em pasta customizada:

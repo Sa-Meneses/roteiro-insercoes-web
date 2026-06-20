@@ -49,7 +49,7 @@ Options:
 `);
 }
 
-async function copySkill(target, { force, dryRun }) {
+async function copySkill(target, { force, dryRun, agent }) {
   target = target.replace(/^~(?=$|\/)/, homedir());
   const finalTarget = resolve(target);
   if (dryRun) {
@@ -58,7 +58,7 @@ async function copySkill(target, { force, dryRun }) {
   }
   if (existsSync(finalTarget)) {
     if (!force) {
-      throw new Error(`${finalTarget} already exists. Re-run with --force to replace it.`);
+      throw new Error(`${finalTarget} already exists. Re-run with --force to replace it:\n  npx github:Sa-Meneses/roteiro-insercoes-web --agent ${agent || "codex"} --force`);
     }
     await rm(finalTarget, { recursive: true, force: true });
   }
