@@ -1,0 +1,29 @@
+{
+  "name": "roteiro-insercoes-web",
+  "version": "1.0.0",
+  "description": "Skill para pesquisar e gravar inserções web a partir de roteiros, com assets em mobile ou 16:9.",
+  "type": "module",
+  "bin": {
+    "roteiro-insercoes-web": "./bin/install.mjs",
+    "install-roteiro-insercoes-web": "./bin/install.mjs"
+  },
+  "files": [
+    "SKILL.md",
+    "agents",
+    "bin",
+    "references",
+    "scripts"
+  ],
+  "keywords": [
+    "codex",
+    "claude-code",
+    "gemini-cli",
+    "skills",
+    "video",
+    "screen-recording"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}

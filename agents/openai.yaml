@@ -1,0 +1,4 @@
+interface:
+  display_name: "Roteiro Inserções Web"
+  short_description: "Busca e grava inserções web por roteiro"
+  default_prompt: "Use $roteiro-insercoes-web para buscar e gravar inserções web a partir do meu roteiro."
